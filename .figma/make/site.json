@@ -1,0 +1,10 @@
+{
+  "description": "Explore Safia Saad’s beginner-friendly AI course, with clear details on Python, machine learning, and computer vision to help newcomers start learning.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}
