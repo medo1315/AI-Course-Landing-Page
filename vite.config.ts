@@ -85,7 +85,7 @@ function figmaSiteConfiguration(config: FigmaSiteConfiguration): Plugin {
     return html.replace(`<!-- ${slotName} -->`, content);
   }
 
-  const title = config.title ?? "Figma Make App";
+  const title = config.title ?? "AI With Safia";
   const description = config.description ?? "";
   // Imported HTML keeps its own favicon. New Makes use PNG because Google Search does not
   // support SVG favicons, even though browsers do.
@@ -457,7 +457,7 @@ function figmaLinkedPackageSourcemaps(): Plugin {
         const mapFile = path.resolve(path.dirname(file), url);
         return { map: JSON.parse(fs.readFileSync(mapFile, "utf8")), mapDir: path.dirname(mapFile) };
       }
-    } catch {}
+    } catch { }
     // Without a usable input map, map every line to itself.
     const mappings = code.split("\n").map((_, i) => (i ? "AACA" : "AAAA"));
     const map = {
